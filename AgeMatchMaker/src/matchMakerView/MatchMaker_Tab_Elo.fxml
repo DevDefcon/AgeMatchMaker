@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainController.Elo_Controller">
+   <children>
+      <TableView fx:id="ratingTableA" layoutX="104.0" layoutY="17.0" prefHeight="122.0" prefWidth="400.0" AnchorPane.topAnchor="15.0">
+        <columns>
+          <TableColumn fx:id="playersNameA" prefWidth="100.0" text="Spieler" />
+          <TableColumn fx:id="playeresRatingA" prefWidth="100.0" text="Spieler Rating" />
+          <TableColumn fx:id="nationRatingA" prefWidth="100.0" text="Volk Rating" />
+          <TableColumn fx:id="mapRatingA" prefWidth="100.0" text="Karten Rating" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="19.0" layoutY="64.0" text="Team A">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ratingTableB" layoutX="104.0" layoutY="284.0" prefHeight="122.0" prefWidth="400.0" AnchorPane.bottomAnchor="145.0">
+         <columns>
+            <TableColumn fx:id="playersNameB" prefWidth="100.0" text="Spieler" />
+            <TableColumn fx:id="playersRatingB" prefWidth="100.0" text="Spieler Rating" />
+            <TableColumn fx:id="nationRatingB" prefWidth="100.0" text="Volk Rating" />
+            <TableColumn fx:id="mapRatingB" prefWidth="100.0" text="Karten Rating" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="20.0" layoutY="382.0" text="Team B">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="eloTableA" layoutX="104.0" layoutY="139.0" prefHeight="50.0" prefWidth="400.0" AnchorPane.topAnchor="136.0">
+        <columns>
+          <TableColumn fx:id="allEloA" prefWidth="95.0" text="Gesamt" />
+            <TableColumn fx:id="teamEloA" prefWidth="94.0" text="Team Elo" />
+          <TableColumn fx:id="nationEloA" prefWidth="95.0" text="Volk Elo" />
+            <TableColumn fx:id="mapEloA" prefWidth="94.0" text="Karten Elo" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="eloTableB" layoutX="104.0" layoutY="406.0" prefHeight="50.0" prefWidth="400.0" AnchorPane.bottomAnchor="96.0">
+         <columns>
+            <TableColumn fx:id="allEloB" prefWidth="95.0" text="Gesamt" />
+            <TableColumn fx:id="teamEloB" prefWidth="94.0" text="Team Elo" />
+            <TableColumn fx:id="nationEloB" prefWidth="95.0" text="Volk Elo" />
+            <TableColumn fx:id="mapEloB" prefWidth="94.0" text="Karten Elo" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="predictionTableA" layoutX="104.0" layoutY="189.0" prefHeight="74.0" prefWidth="400.0" AnchorPane.topAnchor="185.0">
+         <columns>
+            <TableColumn prefWidth="100.0" text="Team Prognose">
+               <columns>
+                  <TableColumn fx:id="teamWinA" prefWidth="50.0" text="Win" />
+                  <TableColumn fx:id="teamLoseA" prefWidth="50.0" text="Lose" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="95.0" text="Volk Prognose">
+               <columns>
+                  <TableColumn fx:id="nationWinA" prefWidth="50.0" text="Win" />
+                  <TableColumn fx:id="nationLoseA" prefWidth="50.0" text="Lose" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="94.0" text="Karten Prognose">
+               <columns>
+                  <TableColumn fx:id="mapWinA" prefWidth="50.0" text="Win" />
+                  <TableColumn fx:id="mapLoseA" prefWidth="50.0" text="Lose" />
+               </columns>
+            </TableColumn>
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="predictionTableB" layoutX="104.0" layoutY="503.0" prefHeight="74.0" prefWidth="400.0" AnchorPane.bottomAnchor="23.0">
+         <columns>
+            <TableColumn prefWidth="100.0" text="Team Prognose">
+               <columns>
+                  <TableColumn fx:id="teamWinB" prefWidth="50.0" text="Win" />
+                  <TableColumn fx:id="teamLoseB" prefWidth="50.0" text="Lose" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="95.0" text="Volk Prognose">
+               <columns>
+                  <TableColumn fx:id="nationWinB" prefWidth="50.0" text="Win" />
+                  <TableColumn fx:id="nationLoseB" prefWidth="50.0" text="Lose" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="94.0" text="Karten Prognose">
+               <columns>
+                  <TableColumn fx:id="mapWinB" prefWidth="50.0" text="Win" />
+                  <TableColumn fx:id="mapLoseB" prefWidth="50.0" text="Lose" />
+               </columns>
+            </TableColumn>
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

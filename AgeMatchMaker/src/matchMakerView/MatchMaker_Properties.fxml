@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainController.Properties_Controller">
+   <children>
+      <Pane layoutY="82.0" prefWidth="279.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <ToggleButton fx:id="doubleNation" layoutX="190.0" layoutY="2.0" mnemonicParsing="false" onMousePressed="#isDoubleNations" prefHeight="25.0" prefWidth="80.0" selected="true" text="ON">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></ToggleButton>
+            <Label layoutX="15.0" layoutY="5.0" text="Doppelte Völker">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="47.0" prefWidth="279.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <ToggleButton fx:id="mirrorNation" layoutX="190.0" layoutY="2.0" mnemonicParsing="false" onMousePressed="#isMirrorNations" prefHeight="25.0" prefWidth="80.0" text="OFF">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></ToggleButton>
+            <Label layoutX="15.0" layoutY="5.0" text="Spiegel Völker">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="14.0" prefWidth="279.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Label layoutX="15.0" layoutY="5.0" text="Auslosung">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="drawingMatch" graphicTextGap="0.0" layoutX="190.0" layoutY="2.0" mnemonicParsing="false" onMousePressed="#isDrawingMatch" prefHeight="25.0" prefWidth="80.0" selected="true" text="ON">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></ToggleButton>
+         </children>
+      </Pane>
+      <Pane layoutY="116.0" prefHeight="400.0" prefWidth="279.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Button fx:id="newPlayer" layoutX="85.0" layoutY="15.0" mnemonicParsing="false" onMousePressed="#createNewPlayer" prefHeight="25.0" prefWidth="110.0" text="Neuer Spieler">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="newMap" layoutX="85.0" layoutY="95.0" mnemonicParsing="false" onMousePressed="#createNewMap" prefHeight="25.0" prefWidth="110.0" text="Neue Karte">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="newNation" layoutX="85.0" layoutY="55.0" mnemonicParsing="false" onMousePressed="#createNewNation" prefHeight="25.0" prefWidth="110.0" text="Neues Volk">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

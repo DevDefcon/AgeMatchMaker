@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainController.Match_Controller">
+   <children>
+      <Button fx:id="player_Slot_1" layoutX="50.0" layoutY="130.0" mnemonicParsing="false" onAction="#setPlayerTeamA" onDragDropped="#dragDropPlayersItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="player_Slot_1" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="player_Slot_2" layoutX="50.0" layoutY="235.0" mnemonicParsing="false" onAction="#setPlayerTeamA" onDragDropped="#dragDropPlayersItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="player_Slot_2" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="player_Slot_3" layoutX="50.0" layoutY="340.0" mnemonicParsing="false" onAction="#setPlayerTeamA" onDragDropped="#dragDropPlayersItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="player_Slot_3" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="player_Slot_4" layoutX="50.0" layoutY="445.0" mnemonicParsing="false" onAction="#setPlayerTeamA" onDragDropped="#dragDropPlayersItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="player_Slot_4" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nation_Slot_2" layoutX="150.0" layoutY="235.0" mnemonicParsing="false" onAction="#setNationTeamA" onDragDropped="#dragDropNationsItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="nation_Slot_2" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nation_Slot_4" layoutX="150.0" layoutY="445.0" mnemonicParsing="false" onAction="#setNationTeamA" onDragDropped="#dragDropNationsItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="nation_Slot_4" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nation_Slot_1" layoutX="150.0" layoutY="130.0" mnemonicParsing="false" onAction="#setNationTeamA" onDragDropped="#dragDropNationsItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="nation_Slot_1" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nation_Slot_3" layoutX="150.0" layoutY="340.0" mnemonicParsing="false" onAction="#setNationTeamA" onDragDropped="#dragDropNationsItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="nation_Slot_3" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nation_Slot_5" layoutX="430.0" layoutY="130.0" mnemonicParsing="false" onAction="#setNationTeamB" onDragDropped="#dragDropNationsItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="nation_Slot_5" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nation_Slot_8" layoutX="430.0" layoutY="445.0" mnemonicParsing="false" onAction="#setNationTeamB" onDragDropped="#dragDropNationsItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="nation_Slot_8" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="player_Slot_8" layoutX="530.0" layoutY="445.0" mnemonicParsing="false" onAction="#setPlayerTeamB" onDragDropped="#dragDropPlayersItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="player_Slot_8" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nation_Slot_7" layoutX="430.0" layoutY="340.0" mnemonicParsing="false" onAction="#setNationTeamB" onDragDropped="#dragDropNationsItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="nation_Slot_7" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="player_Slot_7" layoutX="530.0" layoutY="340.0" mnemonicParsing="false" onAction="#setPlayerTeamB" onDragDropped="#dragDropPlayersItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="player_Slot_7" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="nation_Slot_6" layoutX="430.0" layoutY="235.0" mnemonicParsing="false" onAction="#setNationTeamB" onDragDropped="#dragDropNationsItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="nation_Slot_6" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="player_Slot_6" layoutX="530.0" layoutY="235.0" mnemonicParsing="false" onAction="#setPlayerTeamB" onDragDropped="#dragDropPlayersItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="player_Slot_6" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="player_Slot_5" layoutX="530.0" layoutY="130.0" mnemonicParsing="false" onAction="#setPlayerTeamB" onDragDropped="#dragDropPlayersItems" onDragOver="#dragOverManualItems" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100;" text="player_Slot_5" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="map_Slot" layoutX="250.0" layoutY="60.0" mnemonicParsing="false" onDragDropped="#dragDropMapsItems" onDragOver="#dragOverManualItems" onMousePressed="#mapPreviewButton" prefHeight="51.0" prefWidth="180.0" style="-fx-background-radius: 100;" text="map_Slot" wrapText="true">
+         <effect>
+            <ColorAdjust brightness="0.28" contrast="0.07" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="drawing" layoutX="40.0" layoutY="14.0" mnemonicParsing="false" onMousePressed="#drawing" prefHeight="35.0" prefWidth="80.0" text="Auslosung" />
+      <Button fx:id="save" layoutX="560.0" layoutY="580.0" mnemonicParsing="false" onMousePressed="#save" prefHeight="35.0" prefWidth="80.0" text="Save" />
+      <Button fx:id="reset" layoutX="40.0" layoutY="580.0" mnemonicParsing="false" onMousePressed="#reset" prefHeight="35.0" prefWidth="80.0" text="Reset" visible="false" />
+   </children>
+</AnchorPane>
